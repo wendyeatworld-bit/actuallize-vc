@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actualize</title>
+<meta name="description" content="Actualize is a seed fund backing founders who make expert care cheap, fast and actually available.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23111' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23111'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f5f0;
+    --ink:#161616;
+    --muted:#6b6862;
+    --line:#dcd8cf;
+    --accent:#1f3d2b;
+    --max:760px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141311; --ink:#f1ede4; --muted:#9a958b; --line:#2b2924; --accent:#9fc9ad;
+    }
+  }
+  :root[data-theme="dark"]{ --bg:#141311; --ink:#f1ede4; --muted:#9a958b; --line:#2b2924; --accent:#9fc9ad; }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none; border-bottom:1px solid var(--line); transition:border-color .2s}
+  a:hover{border-color:var(--ink)}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+  header{padding:28px 0}
+  header .wrap{display:flex; justify-content:space-between; align-items:baseline}
+  .mark{font-family:Fraunces,Georgia,serif; font-weight:400; font-size:22px; letter-spacing:-.01em; border:0}
+  .mark span{color:var(--muted)}
+  nav a{font-size:14px; color:var(--muted); margin-left:22px; border:0}
+  nav a:hover{color:var(--ink)}
+
+  .hero{padding:72px 0 56px}
+  h1{
+    font-family:Fraunces,Georgia,serif; font-weight:300;
+    font-size:clamp(34px,6vw,58px); line-height:1.08; letter-spacing:-.02em;
+    margin:0 0 28px; max-width:14em;
+  }
+  .lede{font-size:clamp(18px,2.2vw,21px); color:var(--muted); max-width:34em; margin:0}
+
+  section{padding:56px 0; border-top:1px solid var(--line)}
+  .kicker{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 20px}
+  h2{font-family:Fraunces,Georgia,serif; font-weight:400; font-size:clamp(26px,3.6vw,34px); line-height:1.2; letter-spacing:-.015em; margin:0 0 20px}
+  p{margin:0 0 18px; max-width:36em}
+  p:last-child{margin-bottom:0}
+  em{font-style:italic}
+
+  .layers{display:grid; gap:0; margin-top:8px; border-top:1px solid var(--line)}
+  .layer{display:grid; grid-template-columns:120px 1fr; gap:20px; padding:22px 0; border-bottom:1px solid var(--line)}
+  .layer b{font-family:Fraunces,Georgia,serif; font-weight:400; font-size:19px; line-height:1.3}
+  .layer p{color:var(--muted); font-size:16px; max-width:none}
+  .layer.now b::after{content:" ●"; color:var(--accent); font-size:11px; vertical-align:middle}
+  @media (max-width:520px){ .layer{grid-template-columns:1fr; gap:6px} }
+
+  .shapes{list-style:none; padding:0; margin:8px 0 0; counter-reset:n}
+  .shapes li{padding:18px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:40px 1fr; gap:12px}
+  .shapes li::before{counter-increment:n; content:counter(n,decimal-leading-zero); font-size:13px; color:var(--muted); padding-top:4px; font-variant-numeric:tabular-nums}
+  .shapes b{display:block; font-weight:500; margin-bottom:4px}
+  .shapes span{color:var(--muted); font-size:16px}
+
+  .facts{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:8px}
+  .facts div b{display:block; font-family:Fraunces,Georgia,serif; font-weight:400; font-size:22px; margin-bottom:4px}
+  .facts div span{color:var(--muted); font-size:15px}
+  @media (max-width:520px){ .facts{grid-template-columns:1fr; gap:18px} }
+
+  .companies{display:flex; flex-wrap:wrap; gap:10px 26px; margin:4px 0 0; padding:0; list-style:none}
+  .companies li{font-family:Fraunces,Georgia,serif; font-size:21px}
+  .companies small{display:block; font-family:Inter,system-ui,sans-serif; font-size:13px; color:var(--muted)}
+
+  footer{padding:56px 0 64px; border-top:1px solid var(--line); color:var(--muted); font-size:15px}
+  footer .links a{margin-right:22px}
+  footer .fine{margin-top:28px; font-size:13px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="/">Actualize<span>.vc</span></a>
+    <nav>
+      <a href="#thesis">Thesis</a>
+      <a href="#companies">Companies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>The internet made doctors more expensive. AI is about to make them cheap.</h1>
+      <p class="lede">Actualize is a seed fund. We back founders who use AI to make expert care — medical, financial, legal, technical — fast, affordable and actually available to the people who need it.</p>
+    </div>
+  </div>
+
+  <section id="thesis">
+    <div class="wrap">
+      <p class="kicker">The thesis</p>
+      <h2>Every expert industry is a doctor's office with three layers.</h2>
+      <p>The internet moved information around. It rebuilt everything made of information and left everything that needed a licensed human untouched. Doctors, lawyers and accountants got more expensive while everything online got cheaper. AI changes which layer is up for grabs.</p>
+      <div class="layers">
+        <div class="layer">
+          <b>Front desk</b>
+          <p>Finding, booking, paying. The internet fixed this. The next fight is over which assistant the patient trusts.</p>
+        </div>
+        <div class="layer now">
+          <b>Doctor's office</b>
+          <p>A trained person reads your situation and decides. AI makes this cheap, so one expert can do the work of several. This is where we invest.</p>
+        </div>
+        <div class="layer">
+          <b>Operating table</b>
+          <p>The physical work. Neither technology touches it, which makes the savings in the office layer worth more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Who wins</p>
+      <h2>Whoever owns the thing that can't be copied.</h2>
+      <p>Last time it was the catalog, the brand and the audience. This time it is the license, the liability, the relationship, and the memory of a person over years. When the reading and the paperwork become cheap, the only question left is who is allowed to act on the result.</p>
+      <p>Healthcare is the biggest prize: $4.5 trillion of US spend, about $1 trillion of it on administration. But the same shift is reaching finance, law, insurance, education and IT services — roughly $2 trillion more.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">What we look for</p>
+      <h2>Three shapes of company.</h2>
+      <ol class="shapes">
+        <li><b>The agent layer</b><span>The back office for a whole industry. Picks and shovels for everyone doing the licensed work.</span></li>
+        <li><b>The licensed rollup</b><span>Buy the signature, put software under it, and let one expert serve many more people.</span></li>
+        <li><b>One licensed human plus software</b><span>Doctor-level care at nurse-level cost, delivered straight to the consumer.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">How we invest</p>
+      <div class="facts">
+        <div><b>Seed</b><span>First institutional money, when the team and the broken experience are both clear.</span></div>
+        <div><b>Co-lead or join</b><span>We work alongside other investors rather than insisting on leading alone.</span></div>
+        <div><b>Patient</b><span>Protected industries move on a slow clock. We expect this shakeout to take five to ten years, not twenty.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="companies">
+    <div class="wrap">
+      <p class="kicker">Track record</p>
+      <h2>Companies we have backed.</h2>
+      <ul class="companies">
+        <li>Spring Health<small>Mental health</small></li>
+        <li>Berry Street<small>Nutrition care</small></li>
+        <li>Nirvana<small>Insurance verification</small></li>
+        <li>Predoc<small>Medical records</small></li>
+        <li>Clarium<small>Hospital supply chain</small></li>
+        <li>Era<small>Financial wellbeing</small></li>
+        <li>Alphora<small>AI-native IT services</small></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="links">
+      <a href="mailto:hello@actualize.vc">hello@actualize.vc</a>
+      <a href="https://wendyxiao26.substack.com" target="_blank" rel="noopener">Substack</a>
+      <a href="https://x.com/wendy_xiao26" target="_blank" rel="noopener">X</a>
+    </div>
+    <p class="fine">Actualize · New York · © 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
