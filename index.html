@@ -4,106 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Actualize</title>
-<meta name="description" content="Actualize is a seed fund. Investing in humans improving technology improving humans.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23111' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23111'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<meta name="description" content="Actualize is a seed fund. The internet helped people find the work. AI does the work. We back the founders building it.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial,sans-serif' font-size='18' text-anchor='middle' fill='%23000'%3EA%3C/text%3E%3C/svg%3E">
 <style>
-  :root{
-    --bg:#f7f5f0; --ink:#161616; --muted:#6b6862; --line:#dcd8cf;
-    --net:#b9b3a6; --ai:#1f3d2b;
-  }
+  :root{ --bg:#ffffff; --ink:#000000; --muted:#7a7a7a; }
   @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){ --bg:#141311; --ink:#f1ede4; --muted:#9a958b; --line:#2b2924; --net:#4a463f; --ai:#9fc9ad; }
+    :root:not([data-theme="light"]){ --bg:#000; --ink:#fff; --muted:#8a8a8a; }
   }
-  :root[data-theme="dark"]{ --bg:#141311; --ink:#f1ede4; --muted:#9a958b; --line:#2b2924; --net:#4a463f; --ai:#9fc9ad; }
+  :root[data-theme="dark"]{ --bg:#000; --ink:#fff; --muted:#8a8a8a; }
 
   *{box-sizing:border-box}
   body{
     margin:0; background:var(--bg); color:var(--ink);
-    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
-    font-size:17px; line-height:1.5; -webkit-font-smoothing:antialiased;
-    min-height:100vh; display:flex; flex-direction:column;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:12px; line-height:1.7; letter-spacing:.08em; text-transform:uppercase;
+    -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column; min-height:100vh;
   }
-  a{color:inherit; text-decoration:none; border-bottom:1px solid var(--line)}
-  a:hover{border-color:var(--ink)}
-  .wrap{width:100%; max-width:680px; margin:0 auto; padding:0 20px}
+  a{color:inherit; text-decoration:none}
+  a:hover{opacity:.5}
 
-  header{padding:28px 0}
-  .mark{font-family:Fraunces,Georgia,serif; font-size:22px; border:0}
-  .mark span{color:var(--muted)}
+  header{padding:34px 24px; text-align:center}
+  .mark{font-size:15px; letter-spacing:.32em; font-weight:400}
 
-  main{flex:1; display:flex; align-items:center; padding:40px 0 56px}
+  .photo{display:block; width:100%; max-width:1200px; margin:0 auto; padding:0 24px}
+  .photo img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+
+  main{flex:1; display:flex; align-items:center; justify-content:center; padding:64px 24px 80px}
   h1{
-    font-family:Fraunces,Georgia,serif; font-weight:300;
-    font-size:clamp(30px,5.4vw,46px); line-height:1.12; letter-spacing:-.02em;
-    margin:0 0 48px; max-width:15em;
+    font-weight:400; font-size:12px; line-height:2.1; letter-spacing:.14em;
+    margin:0 auto; max-width:30em; text-align:center;
   }
-  h1 em{font-style:italic; font-weight:400}
+  h1 span{display:block}
+  h1 .us{color:var(--muted)}
 
-  figure{margin:0}
-  svg{width:100%; height:auto; display:block}
-  .lbl{font-family:Inter,system-ui,sans-serif; font-size:13px; fill:var(--muted)}
-  .row{font-family:Fraunces,Georgia,serif; font-size:17px; fill:var(--ink)}
-  .rule{stroke:var(--line); stroke-width:1}
-  .net{fill:var(--net)}
-  .ai{fill:var(--ai)}
-  figcaption{margin-top:22px; font-size:14px; color:var(--muted); max-width:34em}
-
-  footer{padding:28px 0 40px; color:var(--muted); font-size:14px; border-top:1px solid var(--line)}
-  footer .wrap{display:flex; flex-wrap:wrap; gap:10px 24px; justify-content:space-between}
-  footer .links a{margin-right:22px}
+  footer{padding:0 24px 34px; text-align:center; font-size:10px; letter-spacing:.18em; color:var(--muted)}
+  footer a{margin:0 14px}
+  footer .city{margin-top:14px}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap"><a class="mark" href="/">Actualize<span>.vc</span></a></div>
-</header>
+<header><a class="mark" href="/">ACTUALIZE</a></header>
+
+<div class="photo">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3FBEx7ug8c43FUmaHQZoDa0OQAV/hf_20261027_184140_202189ca-5938-49e7-ab62-c8498d952d9e.png" alt="" width="1024" height="688">
+</div>
 
 <main>
-  <div class="wrap">
-    <h1>Investing in humans <em>improving technology</em> improving humans.</h1>
-
-    <figure>
-      <svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
-        <title id="t">What the internet reached versus what AI reaches</title>
-        <desc id="d">Three parts of expert work. The internet only changed finding and booking. AI also changes judgment. Physical work is untouched by both.</desc>
-
-        <!-- column labels -->
-        <text class="lbl" x="400" y="18" text-anchor="middle">INTERNET</text>
-        <text class="lbl" x="560" y="18" text-anchor="middle">AI</text>
-
-        <!-- rows -->
-        <line class="rule" x1="0" y1="34" x2="640" y2="34"/>
-        <text class="row" x="0" y="72">Finding &amp; booking</text>
-        <rect class="net" x="340" y="48" width="120" height="36" rx="3"/>
-        <rect class="ai"  x="500" y="48" width="120" height="36" rx="3"/>
-
-        <line class="rule" x1="0" y1="98" x2="640" y2="98"/>
-        <text class="row" x="0" y="136">Judgment</text>
-        <rect class="ai"  x="500" y="112" width="120" height="36" rx="3"/>
-
-        <line class="rule" x1="0" y1="162" x2="640" y2="162"/>
-        <text class="row" x="0" y="200">Physical work</text>
-
-        <line class="rule" x1="0" y1="226" x2="640" y2="226"/>
-      </svg>
-      <figcaption>The internet only changed how we find and book experts. AI changes the judgment itself, so one licensed person can serve many more people. That middle row is where we invest.</figcaption>
-    </figure>
-  </div>
+  <h1>
+    <span>The internet helped people find the work.</span>
+    <span>AI does the work.</span>
+    <span class="us">We back the founders building it.</span>
+  </h1>
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="links">
-      <a href="mailto:hello@actualize.vc">hello@actualize.vc</a>
-      <a href="https://wendyxiao26.substack.com" target="_blank" rel="noopener">Substack</a>
-      <a href="https://x.com/wendy_xiao26" target="_blank" rel="noopener">X</a>
-    </div>
-    <div>Seed fund · New York</div>
+  <div>
+    <a href="mailto:hello@actualize.vc">Email</a>
+    <a href="https://wendyxiao26.substack.com" target="_blank" rel="noopener">Substack</a>
+    <a href="https://x.com/wendy_xiao26" target="_blank" rel="noopener">X</a>
   </div>
+  <div class="city">Seed Fund &nbsp;·&nbsp; New York</div>
 </footer>
 
 </body>
